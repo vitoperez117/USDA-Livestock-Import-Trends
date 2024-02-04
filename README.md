@@ -17,6 +17,8 @@ https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-da
 
 Data used comes in a zip file with 2 CSVs (one for imports and one for exports).
 
-#### [Units](https://www.census.gov/foreign-trade/guide/sec4.html)
+#### UNITS
 
-Most units used in the dataset are commonly known (e.g. kilogram, dozen, number of discrete units). CWE (carcass weight equivalent) is less commonly known and is measured in kilograms.
+[Conversion Tables](https://www.census.gov/foreign-trade/guide/sec4.html)
+
+Most units used in the dataset are commonly known (e.g. kilogram, dozen, number of discrete units). [CWE](https://www.ers.usda.gov/data-products/food-availability-per-capita-data-system/glossary/#:~:text=2%2C150.42%20cubic%20inches.-,Carcass%2Dweight%20equivalent%20(CWE),weight%20may%20or%20may%20not)(carcass weight equivalent) is less commonly known and is measured in kilograms.
