@@ -16,7 +16,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
  - Creating new Class column to classify subclasses into general categories (Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other).
  - Create a view with new Class column and renamed columns. 
 
-<img width="350" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/f779341d-bb9c-477a-b680-4a752ff9f45b">
+<img width="594" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/e3568862-7026-45dd-8a7b-f66ee21d68b2">
 
 ## Data Aggregation
  - Monthly Average per Class per Country
