@@ -52,6 +52,7 @@ FROM livestock_import;
 --Remove Asterisk from commodity_desc column
 UPDATE livestock_import SET commodity_desc = REPLACE(commodity_desc, '*', '')
 
+--Create view for new clean table
 CREATE VIEW main_table AS
 SELECT geography_desc, year_id AS year, timeperiod_id AS month, 
 CASE
@@ -124,11 +125,21 @@ FROM main_table
 GROUP BY year, item_class, unit_desc
 ORDER BY 1, 2, 4;
 
---Average Imports per Subclass per Year
-SELECT year, subclass, AVG (amount) AS avg_amount, unit_desc
+--Total Imports per Class per Year
+SELECT geography_desc, year, item_class,
+SUM(amount) AS yearly_total,
+unit_desc
 FROM main_table
-GROUP BY year, subclass, unit_desc
-ORDER BY 1, 2, 4;
+GROUP BY geography_desc, year, item_class, unit_desc
+ORDER BY geography_desc;
+
+--Max Imports per Class per Year
+SELECT geography_desc, year, month, item_class,
+MAX(amount) AS largest_import,
+unit_desc
+FROM main_table
+GROUP BY geography_desc, year, month, item_class, unit_desc
+ORDER BY year, month, geography_desc, item_class;
 
 
 --Sort Data by Units
