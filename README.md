@@ -1,4 +1,4 @@
-# US Livestock Imports <img align="right" width="300" alt="USDA_ERS_logo" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/b956d243-a686-4a15-9d1c-57252aa97651">
+# US Livestock Imports <img align="right" width="200" alt="USDA_ERS_logo" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/b956d243-a686-4a15-9d1c-57252aa97651">
 
 Aggregation analysis of US Livestock imports from 122 countries from 1989 to 2023.
 
