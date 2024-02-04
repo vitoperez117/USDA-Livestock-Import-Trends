@@ -13,7 +13,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 ## Data Cleaning
  - Remove asterisk (*) from names of some subclasses.
  - Drop columns that have redundant information (source_id, hs_code, geography_code, attribute_desc) and rename columns for readability (year_id as 'year', timeperiod_id as 'month', commodity_desc as 'subclass')
- - Creating new Class column to classify subclasses into general categories (Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other).
+ - Creating new Class column using a case statement to classify subclasses into general categories (Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other).
  - Create a view with new Class column and renamed columns. 
 
 <img width="1187" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
