@@ -8,10 +8,23 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
  - Identify units and their relationship with subclasses. 
     - Subclasses are measured in kilograms (KG), carcass weight equivalent in pounds (CWE), dozens (DOZ), and number of discrete units (NO).
 
+<img width="1187" alt="Livestock_orig_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/153619d5-9d30-4ad5-86c4-1192a15d38e9">
+
 ## Data Cleaning
  - Remove asterisk (*) from names of some subclasses.
+ - Drop columns that have redundant information (source_id, hs_code, geography_code, attribute_desc) and rename columns for readability (year_id as 'year', timeperiod_id as 'month', commodity_desc as 'subclass')
  - Creating new Class column to classify subclasses into general categories (Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other).
-   
+ - Create a view with new Class column and renamed columns. 
+
+<img width="200" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/bf9ed8a1-1a7d-4288-9b47-bee7ccd7d6f0">
+
+## Data Aggregation
+ - Monthly Average per Class per Country
+ - Monthly Average per Subclass per Country
+ - Total Amount per Month per Class per Country
+ - Total Amount per Year per Class per Country
+ - Max Imports per Month per Class per Country
+
 #### SOURCE DATA
 
 [Data](https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data/livestock-and-meat-international-trade-data/#Zipped%20CSV%20files) used comes in a zip file with 2 CSVs (one for imports and one for exports).
