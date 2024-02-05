@@ -5,6 +5,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 ## Understanding the Data
  - Timeperiod_id column contains month numbers instead of names. Column name renamed to 'month'.
  - Subclasses: 221
+
     <img width="350" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/5d658631-7544-4554-a083-da4cf65464a9">
  - Countries: 122 (except the category 'World')
  - Identify units and their relationship with subclasses. 
