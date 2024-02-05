@@ -4,12 +4,14 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 
 ## Understanding the Data
  - Timeperiod_id column contains month numbers instead of names. Column name renamed to 'month'.
- - Identify subclasses.
- - Identify unique countries.
+ - Subclasses: 221
+    <img width="300" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/5d658631-7544-4554-a083-da4cf65464a9">
+ - Countries: 122 (except the category 'World')
+    <img width="248" alt="Livestock_countries_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/47b6320b-d69a-4043-94d1-f058434877de">
  - Identify units and their relationship with subclasses. 
     - Subclasses are measured in kilograms (KG), carcass weight equivalent in pounds (CWE), dozens (DOZ), and number of discrete units (NO).
 
-<img width="1187" alt="Livestock_orig_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/153619d5-9d30-4ad5-86c4-1192a15d38e9">
+<img width="1000" alt="Livestock_orig_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/153619d5-9d30-4ad5-86c4-1192a15d38e9">
 
 ## Data Cleaning
  - Remove asterisk (*) from names of some subclasses.
@@ -17,7 +19,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
  - Creating new Class column using a case statement to classify subclasses into general categories (Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other).
  - Create a view with new Class column and renamed columns. 
 
-<img width="1187" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
+<img width="1000" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
 
 ## Data Aggregation
  - Monthly Total and Average per Class per Country
