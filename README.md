@@ -5,9 +5,9 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 ## Understanding the Data
  - Timeperiod_id column contains month numbers instead of names. Column name renamed to 'month'.
  - Subclasses: 221
-    <img align="right" width="300" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/5d658631-7544-4554-a083-da4cf65464a9">
+    <img align="right" width="350" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/5d658631-7544-4554-a083-da4cf65464a9">
  - Countries: 122 (except the category 'World')
-    <img align="right" width="248" alt="Livestock_countries_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/47b6320b-d69a-4043-94d1-f058434877de">
+    <img align="right" width="275" alt="Livestock_countries_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/47b6320b-d69a-4043-94d1-f058434877de">
  - Identify units and their relationship with subclasses. 
     - Subclasses are measured in kilograms (KG), carcass weight equivalent in pounds (CWE), dozens (DOZ), and number of discrete units (NO).
 
