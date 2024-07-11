@@ -4,7 +4,8 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 
 [See interactive Tableau dashboard here.](https://vitoperez117.github.io/US_Livestock_Imports/) More below in the Analysis section.
 
-## Understanding the Data [Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing) [Cleaned Data](https://drive.google.com/file/d/1gPZ-5N-VlTjc0LpxBJl9MkR9mD7LjXof/view?usp=sharing) 
+## Understanding the Data 
+[Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing) | [Cleaned Data](https://drive.google.com/file/d/1gPZ-5N-VlTjc0LpxBJl9MkR9mD7LjXof/view?usp=sharing) 
 1. **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
 2. **Categories**: There are 221 categories of livestock and livestock products.
 
