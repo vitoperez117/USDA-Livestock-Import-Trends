@@ -3,14 +3,17 @@
 Aggregation analysis of US Livestock imports from 122 countries from 1989 to 2023.
 
 ## Understanding the Data
- - **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
- - **Categories**: There are 221 categories of livestock and livestock products. 
+1. **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
+2. **Categories**: There are 221 categories of livestock and livestock products.
+<img width="350" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/5d658631-7544-4554-a083-da4cf65464a9">
 
-    <img width="350" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/5d658631-7544-4554-a083-da4cf65464a9">
- - **Countries**: 122 (except the category 'World')
- -  **Units of Measurement and their relationship with Categories**
+3. **Countries**: 122 (except the category 'World')
+    - '**World**' denotes the combined data of all countries.
+
+4. **Units of Measurement and their relationship with Categories**
     - Categories are measured in kilograms (KG), carcass weight equivalent in pounds (CWE), dozens (DOZ), and number of discrete units (NO).
- - Original Table
+
+**Original Table**
     <img width="1000" alt="Livestock_orig_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/153619d5-9d30-4ad5-86c4-1192a15d38e9">
 
 ## Data Cleaning
@@ -24,13 +27,13 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 <img width="1000" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
 
 ## Data Aggregation
- - Monthly Total and Average Amount per Class per Country
+1. Monthly Total and Average Amount per Class per Country
    <img width="919" alt="Livestock_monthly_total_avg_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/e82e27a3-3b68-47f6-ac57-fde227e9d12c">
 
- - Yearly Total Amount per Class per Country
+2. Yearly Total Amount per Class per Country
    <img width="717" alt="Livestock_yearly_total_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/20f0a069-7e2b-4b85-9914-6d09221c786d">
 
- - Max Imports per Month per Class per Country
+3. Max Imports per Month per Class per Country
    <img width="717" alt="Livestock_max_month_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/11eeb560-302b-437e-84d1-02f82f78c7a2">
 
 
