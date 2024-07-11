@@ -5,7 +5,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 [See interactive Tableau dashboard here.](https://vitoperez117.github.io/US_Livestock_Imports/) More below in the Analysis section.
 
 ## Understanding the Data 
-[Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing) | [Cleaned Data](https://drive.google.com/file/d/1gPZ-5N-VlTjc0LpxBJl9MkR9mD7LjXof/view?usp=sharing) 
+[Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing)
 1. **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
 2. **Categories**: There are 221 categories of livestock and livestock products.
 
@@ -23,6 +23,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
     <img width="1000" alt="Livestock_orig_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/153619d5-9d30-4ad5-86c4-1192a15d38e9">
 
 ## Data Cleaning
+[Cleaned Data](https://drive.google.com/file/d/1gPZ-5N-VlTjc0LpxBJl9MkR9mD7LjXof/view?usp=sharing) 
  1. Remove asterisk (*) from the names of some classes.
  2. Drop columns that have redundant information (source_id, hs_code, geography_code, attribute_desc).
  3. Creating new Class column using a case statement to group 221 categories into 9 general classes which I labelled 'item_class'
