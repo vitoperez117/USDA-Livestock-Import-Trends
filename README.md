@@ -2,7 +2,7 @@
 
 Aggregation analysis of US Livestock imports from 122 countries from 1989 to 2023.
 
-[See Tableau dashboard here.](https://vitoperez117.github.io/US_Livestock_Imports/)
+[See interactive Tableau dashboard here.](https://vitoperez117.github.io/US_Livestock_Imports/). More below in the Analysis section.
 
 ## Understanding the Data
 1. **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
@@ -41,6 +41,17 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 
 3. Max Imports per Month per Class per Country
    <img width="650" alt="Livestock_max_month_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/11eeb560-302b-437e-84d1-02f82f78c7a2">
+
+## Analysis
+The USDA records various types of Livestock and Meat products with different units of measurement. To get an overview of import trends, amounts for each class (Beef, Pork, Lamb, Poultry, Eggs, Goat, Live Cattle, Live Hogs, Mixed, and Other) are aggregated irrespective of unit of measurement.
+
+Beef products overwhelmingly outnumber other imports. Pork comes in a distant second followed by significantly smaller volumes of Lamb and Poultry. Eggs, Mixed meats, products classified as 'Other', and live cattle and hogs place much lower in comparison. Depending on the product, this may suggest low demand or high domestic production.
+
+[Import Volume per Country](https://public.tableau.com/views/USLivestockImports/VolumeandClassperCountry?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+In order of import size aggregated from 1989-2023, the top 10 sources are Canada, Australia, New Zealand, Mexico, Brazil, Denmark, Uruguay, Argentina, Nicaragua, Poland. 
+
+[Imports by Type](https://public.tableau.com/views/USLivestockImports/TotalImportsperCountrybyYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+Examining product types, throughout the year the bulk of US imports are trimmed beef, pork, and lamb carcasses. Imports seem to observe seasonality, rising from March - August and dipping from September - February. More research is required to determine whether supply, demand, or other factors account for seasonality.
 
 
 #### SOURCE DATA
