@@ -32,6 +32,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
    <img width="800" alt="Livestock_monthly_total_avg_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/e82e27a3-3b68-47f6-ac57-fde227e9d12c">
 
 2. Yearly Total Amount per Class per Country
+
    <img width="650" alt="Livestock_yearly_total_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/20f0a069-7e2b-4b85-9914-6d09221c786d">
 
 3. Max Imports per Month per Class per Country
