@@ -6,6 +6,8 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 1. **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
 2. **Categories**: There are 221 categories of livestock and livestock products.
 
+   
+
 <img width="350" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/5d658631-7544-4554-a083-da4cf65464a9">
 
 3. **Countries**: 122 (except the category 'World')
