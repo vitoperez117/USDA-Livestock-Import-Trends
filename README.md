@@ -45,6 +45,7 @@ Aggregation analysis of US Livestock imports from 122 countries from 1989 to 202
 ## Analysis
 The USDA records various types of Livestock and Meat products with different units of measurement. To get an overview of import trends, amounts for each class (Beef, Pork, Lamb, Poultry, Eggs, Goat, Live Cattle, Live Hogs, Mixed, and Other) are aggregated irrespective of unit of measurement.
 
+[Total Imports per Year](https://public.tableau.com/views/USLivestockImports/TotalperYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 Beef products overwhelmingly outnumber other imports. Pork comes in a distant second followed by significantly smaller volumes of Lamb and Poultry. Eggs, Mixed meats, products classified as 'Other', and live cattle and hogs place much lower in comparison. Depending on the product, this may suggest low demand or high domestic production.
 
 [Import Volume per Country](https://public.tableau.com/views/USLivestockImports/VolumeandClassperCountry?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
