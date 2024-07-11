@@ -8,7 +8,7 @@ const url = "https://public.tableau.com/views/USLivestockImports/TotalperYear?:l
 const vizContainer = document.getElementById('vizContainer');
 const options = {
     hideTabs: true,
-    height: 800,
+    height: 650,
     width: 1000,
     onFirstInteraction: function() {
         workbook = viz.getWorkbook();
