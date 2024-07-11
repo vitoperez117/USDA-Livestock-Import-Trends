@@ -2,7 +2,7 @@
 
 Aggregation analysis of US Livestock imports from 122 countries from 1989 to 2023.
 
-[See interactive Tableau dashboard here.](https://vitoperez117.github.io/US_Livestock_Imports/). More below in the Analysis section.
+[See interactive Tableau dashboard here.](https://vitoperez117.github.io/US_Livestock_Imports/) More below in the Analysis section.
 
 ## Understanding the Data
 1. **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
