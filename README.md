@@ -56,6 +56,13 @@ In order of import size aggregated from 1989-2023, the top 10 sources are Canada
 [Imports by Type](https://public.tableau.com/views/USLivestockImports/TotalImportsperCountrybyYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 Examining product types, throughout the year the bulk of US imports are trimmed beef, pork, and lamb carcasses. Imports seem to observe seasonality, rising from March - August and dipping from September - February. More research is required to determine whether supply, demand, or other factors account for seasonality.
 
+## Limitations
+The data can only present purchase trends but cannot explain seasonality, preference for certain countries as suppliers, or preference for certain livestock and livestock products.
+
+## Next Steps
+1. Visualize the data on a world map where the user can click on countries to expand on country-specific import data.
+2. Focus on one general class of livestock/livestock product and examine trends regarding its subclasses. 
+
 
 #### SOURCE DATA
 
