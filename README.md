@@ -2,7 +2,7 @@
 
 Aggregation analysis of US Livestock imports from 122 countries from 1989 to 2023.
 
-[See interactive Tableau dashboard here.](https://vitoperez117.github.io/US_Livestock_Imports/) More below in the Analysis section.
+[See interactive Tableau dashboard here.](https://public.tableau.com/views/USLivestockImports/TotalperYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) More below in the Analysis section.
 
 ## Understanding the Data 
 [Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing)
