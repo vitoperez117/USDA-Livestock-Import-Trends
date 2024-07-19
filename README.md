@@ -3,7 +3,7 @@
 Aggregation analysis of US Livestock imports from 122 countries from 1989 to 2023.
 
 
-[<img width="1000" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/USDA-Livestock-Import-Trend-Analysis/blob/main/assets/Dashboard%20Screenshot.png">](https://public.tableau.com/views/USLivestockImports/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[<img width="800" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/USDA-Livestock-Import-Trend-Analysis/blob/main/assets/Dashboard%20Screenshot.png">](https://public.tableau.com/views/USLivestockImports/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 ## Understanding the Data 
