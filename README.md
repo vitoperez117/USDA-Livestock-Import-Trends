@@ -1,6 +1,6 @@
 # US Livestock Imports <img align="right" width="295" alt="USDA_ERS_logo" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/b956d243-a686-4a15-9d1c-57252aa97651">
 
-Aggregation analysis of US Livestock imports trends from 122 countries from 1989 to 2023. Using Tableau, we can identify the main types of livestock and livestock products and the countries that US companies are purchasing from.
+Aggregation analysis of US Livestock imports trends from 122 countries from 1989 to 2023. Using Tableau, we can identify current and historical trends regarding types of livestock and livestock product imports and the countries from which US companies make purchases.
 
 
 [<img width="800" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/USDA-Livestock-Import-Trend-Analysis/blob/main/assets/Dashboard%20Screenshot.png">](https://public.tableau.com/views/USLivestockImports/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
@@ -8,7 +8,7 @@ Aggregation analysis of US Livestock imports trends from 122 countries from 1989
 
 ## Understanding the Data 
 [Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing)
-1. **Month Column**: The month column is called 'Timeperiod_id column'. Instead of month names, it contains month numbers. Column name renamed to 'month'.
+1. **Rows**: There are 295,323 entries
 2. **Categories**: There are 221 categories of livestock and livestock products.
 
    
@@ -17,6 +17,7 @@ Aggregation analysis of US Livestock imports trends from 122 countries from 1989
 
 3. **Countries**: 122 (except the category 'World')
     - '**World**' denotes the combined data of all countries.
+    - The dataset contains countries that no longer exist or had a name change (ex. Czechoslovakia, Federal Republic of Germany, Myanmar (Burma), USSR, Yugoslavia).
 
 4. **Units of Measurement and their relationship with Categories**
     - Categories are measured in kilograms (KG), carcass weight equivalent in pounds (CWE), dozens (DOZ), and number of discrete units (NO).
@@ -29,10 +30,11 @@ Aggregation analysis of US Livestock imports trends from 122 countries from 1989
  1. Remove asterisk (*) from the names of some classes.
  2. Drop columns that have redundant information (source_id, hs_code, geography_code, attribute_desc).
  3. Drop rows for 'World' because those contain the sum of all imports from all countries.
- 4. Creating new Class column using a case statement to group 221 categories into 9 general classes which I labelled 'item_class'
+ 4. Rename/reassign countries to their current (closest) territorial boundaries.
+ 5. Creating new Class column using a case statement to group 221 categories into 9 general classes which I labelled 'item_class'
      - Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other
- 5. Rename columns for readability (year_id as '**year**', timeperiod_id as '**month**', geography_desc as '**country**', commodity_desc as '**subclass**').
- 6. Create a view with new Class column and renamed columns ("main_table").
+ 6. Rename columns for readability (year_id as '**year**', timeperiod_id as '**month**', geography_desc as '**country**', commodity_desc as '**subclass**').
+ 7. Create a view with new Class column and renamed columns ("main_table").
 
 <img width="1000" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
 
