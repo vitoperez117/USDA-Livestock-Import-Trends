@@ -10,8 +10,8 @@ Data cleaning and aggregation were done with PostgreSQL. Python was used to expo
 
 ## Understanding the Data 
 [Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing)
-1. **Rows**: There are 295,323 entries containing country of origin, year and month of import, import type, import amount, and unit of measurement.
-2. **Categories**: There are 221 categories of livestock and livestock products.
+1. **Rows**: There are 295,323 entries containing country of origin, year of import, month of import , import type, import amount, and unit of measurement.
+2. **Categories**: There are 221 categories of livestock and livestock products. Later, these categories will be grouped into general classes (Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other).
 
    
 
@@ -33,8 +33,7 @@ Data cleaning and aggregation were done with PostgreSQL. Python was used to expo
  2. Drop columns with impertinent information (source_id, hs_code, geography_code, attribute_desc).
  3. Drop rows for 'World' because those contain the sum of all imports from all countries.
  4. Rename/reassign countries to their current (closest) territorial boundaries.
- 5. Create new Class column using a CASE statement to group 221 categories into 9 general classes which I labelled 'item_class'
-     - Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other
+ 5. Create new Class column using a CASE statement to group 221 categories into 9 general classes which I labelled 'item_class'.
  6. Rename columns for readability (year_id as '**year**', timeperiod_id as '**month**', geography_desc as '**country**', commodity_desc as '**subclass**').
  7. Create a view with new Class column and renamed columns ("main_table").
 
