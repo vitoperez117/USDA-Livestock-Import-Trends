@@ -10,7 +10,7 @@ Data cleaning and aggregation were done with PostgreSQL. Python was used to expo
 
 ## Understanding the Data 
 [Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing)
-1. **Rows**: There are 295,323 entries
+1. **Rows**: There are 295,323 entries containing country of origin, year and month of import, import type, import amount, and unit of measurement.
 2. **Categories**: There are 221 categories of livestock and livestock products.
 
    
