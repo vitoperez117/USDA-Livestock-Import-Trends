@@ -28,10 +28,11 @@ Aggregation analysis of US Livestock imports trends from 122 countries from 1989
 [Cleaned Data](https://drive.google.com/file/d/1gPZ-5N-VlTjc0LpxBJl9MkR9mD7LjXof/view?usp=sharing) 
  1. Remove asterisk (*) from the names of some classes.
  2. Drop columns that have redundant information (source_id, hs_code, geography_code, attribute_desc).
- 3. Creating new Class column using a case statement to group 221 categories into 9 general classes which I labelled 'item_class'
+ 3. Drop rows for 'World' because those contain the sum of all imports from all countries.
+ 4. Creating new Class column using a case statement to group 221 categories into 9 general classes which I labelled 'item_class'
      - Beef, Live Cattle, Pork, Live Hogs, Poultry, Lamb, Goats, Eggs, Mixed, Other
- 4. Rename columns for readability (year_id as '**year**', timeperiod_id as '**month**', commodity_desc as '**subclass**').
- 5. Create a view with new Class column and renamed columns ("main_table").
+ 5. Rename columns for readability (year_id as '**year**', timeperiod_id as '**month**', geography_desc as '**country**', commodity_desc as '**subclass**').
+ 6. Create a view with new Class column and renamed columns ("main_table").
 
 <img width="1000" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
 
