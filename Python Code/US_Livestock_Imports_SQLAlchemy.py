@@ -23,12 +23,12 @@ engine = create_engine(f'postgresql://{database_path}')
 conn = engine.connect()
 
 #transform sql table into a pandas object
-data = pd.read_sql("SELECT * FROM main_import_table", conn)
+data = pd.read_sql("SELECT * FROM imports_no_world", conn)
 
 #turn pandas object into a dataframe
 data = pd.DataFrame(data)
 
 #export dataframe into local folder
-filepath = Path('/Users/vito/Documents/Data_2024/LivestockMeatTrade/csv_files/main_import_table.csv')
+filepath = Path('/Users/vito/Downloads/main_import_table.csv')
 filepath.parent.mkdir(parents=True, exist_ok=True)
 data.to_csv(filepath)
