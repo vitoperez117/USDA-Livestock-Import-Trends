@@ -33,18 +33,42 @@ FROM '/Users/vito/Documents/Data_2024/LivestockMeatTrade/csv_files/LivestockMeat
 DELIMITER ','
 CSV HEADER;
 
---BIG PICTURE
+--UNDERSTANDING THE DATA--
 
 --Identify Subclasses
-CREATE VIEW subclasses AS
+--CREATE VIEW subclasses AS
 SELECT DISTINCT commodity_desc
 FROM livestock_import;
 
---Remove Asterisk from commodity_desc column
+--Remove Asterisk from Subclasses column
 UPDATE livestock_import SET commodity_desc = REPLACE(commodity_desc, '*', '')
 
---Create View with General Classes for each Subclass
-CREATE VIEW main_table AS
+--Identify all Countries 
+--CREATE VIEW countries AS
+SELECT DISTINCT geography_desc
+FROM livestock_import;
+--122 countries
+
+--Identify all Units
+--CREATE VIEW units AS
+SELECT DISTINCT unit_desc
+FROM livestock_import;
+--CWE, DOZ, KG, NO
+
+--Identify all Timeperiods
+--CREATE VIEW timeperiods AS
+SELECT DISTINCT timeperiod_id
+FROM livestock_import;
+-- 1-12 (months)
+
+--Number of Unique Import Types from each Country per Year
+SELECT year_id, geography_desc, COUNT (commodity_desc) AS imports
+FROM livestock_import
+GROUP BY geography_desc, year_id
+ORDER BY year_id;
+
+--Group Subclasses into general Classes 
+--CREATE VIEW main_table AS
 SELECT geography_desc, year_id AS year, timeperiod_id AS month, 
 CASE
 		--MIX
@@ -80,29 +104,27 @@ CASE
 	commodity_desc AS subclass, amount, unit_desc
 FROM livestock_import;
 
---Country List
-CREATE VIEW countries AS
-SELECT DISTINCT geography_desc
-FROM livestock_import;
---122 countries
+--Confirming if 'World' is just a total of all countries's amounts--
+SELECT item_class, SUM(amount)
+FROM main_table
+WHERE geography_desc='World' -- totals for World only
+GROUP BY item_class;
 
---Units List
-CREATE VIEW units AS
-SELECT DISTINCT unit_desc
-FROM livestock_import;
---CWE, DOZ, KG, NO
+SELECT item_class, SUM(amount)
+FROM main_table
+WHERE NOT geography_desc='World' -- totals without World
+GROUP BY item_class;
 
---Timeperiod List
-CREATE VIEW timeperiods AS
-SELECT DISTINCT timeperiod_id
-FROM livestock_import;
--- 1-12 (months)
+--Delete rows where geography_desc = 'World'
+CREATE TABLE imports_no_world AS 
+SELECT * FROM main_table; --295323 rows
 
---Number of Unique Import Types from each Country per Year
-SELECT year_id, geography_desc, COUNT (commodity_desc) AS imports
-FROM livestock_import
-GROUP BY geography_desc, year_id
-ORDER BY year_id;
+DELETE FROM imports_no_world
+WHERE geography_desc='World'; --213003 rows
+
+
+
+--BASIC ANALYSIS--
 
 --Total Imports per Class per Month
 SELECT geography_desc, year, month, item_class, SUM (amount) AS total_amount, unit_desc
