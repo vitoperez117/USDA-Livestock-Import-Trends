@@ -1,6 +1,6 @@
 # US Livestock Imports <img align="right" width="295" alt="USDA_ERS_logo" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/b956d243-a686-4a15-9d1c-57252aa97651">
 
-Aggregation analysis of US Livestock imports trends from 122 countries from 1989 to 2023. Using Tableau, we can identify current and historical trends regarding types of livestock and livestock product imports and the countries from which US companies make purchases.
+Aggregation analysis of US Livestock imports from 122 countries from 1989 to 2023. Using Tableau, we can identify current and historical trends regarding types of livestock and livestock product imports and the countries from which US companies make purchases.
 
 Data cleaning and aggregation were done with PostgreSQL. Python was used to export the finalized table from SQL into a CSV. The CSV was connected to Tableau to generate the final dashboard.
 
