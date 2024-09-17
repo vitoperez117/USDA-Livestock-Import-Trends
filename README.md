@@ -40,7 +40,7 @@ Examining product types, throughout the year the bulk of US imports are trimmed 
     <img width="1000" alt="Livestock_orig_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/153619d5-9d30-4ad5-86c4-1192a15d38e9">
 
 
-## Data Cleaning
+### Data Cleaning
 [Cleaned Data](https://drive.google.com/file/d/1gPZ-5N-VlTjc0LpxBJl9MkR9mD7LjXof/view?usp=sharing) 
  1. Remove asterisk (*) from the names of some classes.
  2. Drop columns with impertinent information (source_id, hs_code, geography_code, attribute_desc).
@@ -52,7 +52,7 @@ Examining product types, throughout the year the bulk of US imports are trimmed 
 
 <img width="1000" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
 
-## Data Aggregation
+### Data Aggregation
 1. Monthly Total and Average Amount per Class per Country
    <img width="800" alt="Livestock_monthly_total_avg_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/e82e27a3-3b68-47f6-ac57-fde227e9d12c">
 
