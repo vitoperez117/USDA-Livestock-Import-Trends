@@ -7,6 +7,19 @@ Data cleaning and aggregation were done with PostgreSQL. Python was used to expo
 
 [<img width="800" alt="Livestock_subclasses_ss" src="https://github.com/vitoperez117/USDA-Livestock-Import-Trends/blob/main/assets/Tableau%20Screenshot.png">](https://public.tableau.com/views/USLivestockImports1989-2023/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+## Analysis
+The USDA records various types of Livestock and Meat products with different units of measurement. To get an overview of import trends, amounts for each class (Beef, Pork, Lamb, Poultry, Eggs, Goat, Live Cattle, Live Hogs, Mixed, and Other) are aggregated irrespective of unit of measurement.
+
+[Total Imports per Year](https://public.tableau.com/views/USLivestockImports/TotalperYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+Beef products overwhelmingly outnumber other imports. Pork comes in a distant second followed by significantly smaller volumes of Lamb and Poultry. Eggs, Mixed meats, products classified as 'Other', and live cattle and hogs place much lower in comparison. Depending on the product, this may suggest low demand or high domestic production.
+
+[Import Volume per Country](https://public.tableau.com/views/USLivestockImports/VolumeandClassperCountry?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+In order of import size aggregated from 1989-2023, the top 10 sources are Canada, Australia, New Zealand, Mexico, Brazil, Denmark, Uruguay, Argentina, Nicaragua, Poland. 
+
+[Imports by Type](https://public.tableau.com/views/USLivestockImports/TotalImportsperCountrybyYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+Examining product types, throughout the year the bulk of US imports are trimmed beef, pork, and lamb carcasses. Imports seem to observe seasonality, rising from March - August and dipping from September - February. More research is required to determine whether supply, demand, or other factors account for seasonality.
+
+
 ## Understanding the Data 
 [Original USDA Data](https://drive.google.com/file/d/1uGs3EEyieEX6ZCbTax34iqJTpnM8ZdLS/view?usp=sharing)
 1. **Rows**: There are 295,323 entries containing country of origin, year, month, import type, import amount, and unit of measurement.
@@ -26,19 +39,8 @@ Data cleaning and aggregation were done with PostgreSQL. Python was used to expo
 **Original Table**
     <img width="1000" alt="Livestock_orig_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/153619d5-9d30-4ad5-86c4-1192a15d38e9">
 
-### Analysis
-The USDA records various types of Livestock and Meat products with different units of measurement. To get an overview of import trends, amounts for each class (Beef, Pork, Lamb, Poultry, Eggs, Goat, Live Cattle, Live Hogs, Mixed, and Other) are aggregated irrespective of unit of measurement.
 
-[Total Imports per Year](https://public.tableau.com/views/USLivestockImports/TotalperYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-Beef products overwhelmingly outnumber other imports. Pork comes in a distant second followed by significantly smaller volumes of Lamb and Poultry. Eggs, Mixed meats, products classified as 'Other', and live cattle and hogs place much lower in comparison. Depending on the product, this may suggest low demand or high domestic production.
-
-[Import Volume per Country](https://public.tableau.com/views/USLivestockImports/VolumeandClassperCountry?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-In order of import size aggregated from 1989-2023, the top 10 sources are Canada, Australia, New Zealand, Mexico, Brazil, Denmark, Uruguay, Argentina, Nicaragua, Poland. 
-
-[Imports by Type](https://public.tableau.com/views/USLivestockImports/TotalImportsperCountrybyYear?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
-Examining product types, throughout the year the bulk of US imports are trimmed beef, pork, and lamb carcasses. Imports seem to observe seasonality, rising from March - August and dipping from September - February. More research is required to determine whether supply, demand, or other factors account for seasonality.
-
-### Data Cleaning
+## Data Cleaning
 [Cleaned Data](https://drive.google.com/file/d/1gPZ-5N-VlTjc0LpxBJl9MkR9mD7LjXof/view?usp=sharing) 
  1. Remove asterisk (*) from the names of some classes.
  2. Drop columns with impertinent information (source_id, hs_code, geography_code, attribute_desc).
@@ -50,7 +52,7 @@ Examining product types, throughout the year the bulk of US imports are trimmed 
 
 <img width="1000" alt="Livestock_main_table_screenshot" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/74ca7a56-cd7b-4387-9852-7a0f7f1502d3">
 
-### Data Aggregation
+## Data Aggregation
 1. Monthly Total and Average Amount per Class per Country
    <img width="800" alt="Livestock_monthly_total_avg_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/e82e27a3-3b68-47f6-ac57-fde227e9d12c">
 
@@ -61,10 +63,10 @@ Examining product types, throughout the year the bulk of US imports are trimmed 
 3. Max Imports per Month per Class per Country
    <img width="650" alt="Livestock_max_month_class" src="https://github.com/vitoperez117/US_Livestock_Imports/assets/52138860/11eeb560-302b-437e-84d1-02f82f78c7a2">
 
-### Limitations
+## Limitations
 The data can only present purchase trends but cannot explain seasonality, preference for certain countries as suppliers, or preference for certain livestock and livestock products.
 
-### Next Steps
+## Next Steps
 1. Visualize the data on a world map where the user can click on countries to expand on country-specific import data.
 2. Focus on one general class of livestock/livestock product and examine trends regarding its subclasses. 
 
